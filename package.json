@@ -1,0 +1,44 @@
+{
+  "name": "es7-sass-webpack2-starterkit",
+  "version": "1.0.0",
+  "description": "A starter kit for starting a vanila ES7 SASS project",
+  "main": "index.js",
+  "author": "Vijay <vijaydev.in@gmail.com> (http://vijaydev.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iamvijaydev/ng-augment-native-scroll.git"
+  },
+  "keywords": [
+    "ES7",
+    "SASS",
+    "Webpack 2",
+    "Starter kit",
+    "eslint",
+    "webpack dev server"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf build/*",
+    "prod": "cross-env NODE_ENV=production webpack",
+    "build": "npm run clean && npm run prod",
+    "start": "cross-env NODE_ENV=development webpack-dev-server"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.8",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.16.0",
+    "extract-text-webpack-plugin": "beta",
+    "file-loader": "^0.10.0",
+    "image-webpack-loader": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
