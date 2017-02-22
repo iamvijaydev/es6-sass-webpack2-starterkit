@@ -38,8 +38,8 @@ Run `npm run build` to generate the files in build folder
 
 **Q:** I don't want Hot Module Reloading
 
-**A:** Please remove `hot` and `inline` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L57-L58)). Additionally also remove the plugin `new webpack.HotModuleReplacementPlugin()` from `plugins` array.
+**A:** Please remove `hot` and `inline` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L57-L58)). Additionally also remove the plugin `new webpack.HotModuleReplacementPlugin()` from `plugins` ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L74)) array.
 
 **Q:** How to disable `historyApiFallback`
 
-**A:** Please remove `historyApiFallback` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L61).
+**A:** Please remove `historyApiFallback` from `devServer` object in `webpack.config.js` file ([code](https://github.com/iamvijaydev/es6-sass-webpack2-starterkit/blob/master/webpack.config.js#L61)).
