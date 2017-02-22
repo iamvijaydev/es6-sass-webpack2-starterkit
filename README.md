@@ -17,7 +17,7 @@ $ npm install yarn -g
 * Update `package.json` - name, version, description, author, repository and keywords to your requirement
 
 ### Install packages
-Now run `yarn install` to install all the dev-ependency packages.
+Now run `yarn install` to install all the dev-dependency packages.
 
 ### Start server
 Now run `npm start` to start the dev server. Open [localhost:3000](http://localhost:3000/) in browser to view the output.
