@@ -26,7 +26,7 @@ Now run `npm start` to start the dev server. Open [localhost:3000](http://localh
 * Entry for webpack is in `src/scripts/index.js`. Unless you are sure what you are doing you should not **move** or **rename** this file. You sure can edit it.
 * Entry for SCSS file is `src/scss/styles.scss` and is added as first line in `src/scripts/index.js`. Unless you are sure what you are doing wou should not edit this.
 * Apart from the above settings you can develop the app's file and folders as you like.
-* As you make edit the code the changes are updated in browser without reloading.
+* As you make edit the code, the changes are updated in browser without reloading.
 
 ### Build for production
 Run `npm run build` to generate the files in build folder
