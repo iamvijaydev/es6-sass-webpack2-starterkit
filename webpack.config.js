@@ -30,14 +30,14 @@ module.exports = {
             exclude: /node_modules/,
             use: [{
                     loader: 'file-loader',
-                    query: {
+                    options: {
                         hash: 'sha512',
                         digest: 'hex',
                         name: '[hash].[ext]'
                     }
                 }, {
                     loader: 'image-webpack-loader',
-                    query: {
+                    options: {
                         progressive: true,
                         optimizationLevel: 7,
                         interlaced: false
@@ -51,6 +51,15 @@ module.exports = {
             use: 'url-loader?limit=1024&name=fonts/[name].[ext]'
         }]
     },
+    devServer: {
+        contentBase: path.join(__dirname, '/'),
+        publicPath: '/build/',
+        hot: true,
+        inline: true,
+        compress: true,
+        port: 3000,
+        historyApiFallback: true
+    },
     plugins: [
         new webpack.BannerPlugin({
             banner: `v${require('./package.json').version}`,
@@ -61,13 +70,7 @@ module.exports = {
             filename: '[name].css',
             allChunks: true,
             disable: process.env.NODE_ENV === 'development'
-        })
-    ],
-    devServer: {
-        contentBase: path.join(__dirname, '/'),
-        publicPath: '/build/',
-        inline: false,
-        compress: true,
-        port: 3000
-    }
+        }),
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };

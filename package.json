@@ -2,7 +2,7 @@
   "name": "es7-sass-webpack2-starterkit",
   "version": "1.0.0",
   "description": "A starter kit for starting a vanila ES7 SASS project",
-  "main": "index.js",
+  "main": "src/scripts/index.js",
   "author": "Vijay <vijaydev.in@gmail.com> (http://vijaydev.com/)",
   "repository": {
     "type": "git",

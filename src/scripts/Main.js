@@ -6,13 +6,14 @@ export default class Main {
     }
 
     genMsg() {
-        let user = prompt('Hey, what\'s your name', 'Vijay Dev');
+        let defaultValue = 'Vijay Dev';
+        let user = prompt('Hey, what\'s your name', defaultValue);
         let msg;
 
         if (user != null) {
             msg = `${this.greet}, ${user}`;
         } else {
-            msg = this.greet;
+            msg = `${this.greet}, ${defaultValue}`;
         }
 
         return msg;
