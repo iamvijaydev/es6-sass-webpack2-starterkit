@@ -1,4 +1,4 @@
-# es6-sass-webpack2-starterkit
+# ES6 SASS Webpack 2 starter kit
 
 This is a barebone minimalistic starter kit for kicking off an ES6, SASS, Webpack 2 project.
 
